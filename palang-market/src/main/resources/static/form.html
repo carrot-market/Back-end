@@ -35,18 +35,36 @@
       </li>
     </ul>
     <a class="btn btn-outline-primary" href="/login.html">로그인</a>&nbsp;
-    <a class="btn btn-outline-primary" href="/form.html">회원가입</a>
+    <a class="btn btn-outline-primary" href="/create.html">회원가입</a>
   </div>
 </nav>
 
 <main role="main" class="container">
 
-  <div class="starter-template">
-    <h1>Pal/ang market</h1>
-    <p class="lead">물건 판매 및 구인 구직 페이지</p>
-  </div>
+		<div class="starter-template">
+			<h1>Pal/ang market</h1>
+			<div class="form-group">
+				<label for="tbl_name">Name</label> <input
+					type="email" class="form-control" id="tbl_name" placeholder="제목">
+			</div>
+			<div class="form-group">
+				<label for="tbl_txt">Text</label>
+				<textarea class="form-control" id="tbl_txt" rows="3"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="tbl_cost">가격</label> <input type="email"
+					class="form-control" id="tbl_cost" placeholder="1,000 원">
+			</div>
+			<form>
+				<div class="form-group">
+					<label for="tbl_file">image</label> <input
+						type="file" class="form-control-file" id="tbl_file">
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
 
-</main>
+	</main>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
