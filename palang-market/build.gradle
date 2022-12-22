@@ -26,9 +26,19 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'com.mysql:mysql-connector-j'
+	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
+	testCompileOnly 'org.projectlombok:lombok:1.18.22' // 테스트 의존성 추가
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.22' // 테스트 의존성 추가
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'io.projectreactor:reactor-test'
+
+	//스프링 시큐리티 관련 (로그인 구현 시 필요)
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
+
+	//로그
+	implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
 }
 
 tasks.named('test') {
